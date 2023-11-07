@@ -40,7 +40,7 @@ h1 {
     font-family: 'Playfair Display', serif;
     font-size: 80px;
     line-height: 70px;
-    color:#fff;
+    color: #fff;
 }
 
 h4 {
@@ -63,11 +63,13 @@ h4:before {
     background: #425BB5;
     top: 9px;
 }
-h1.size-50{
-    color:black;
+
+h1.size-50 {
+    color: black;
 }
-h1.size-50_education{
-    color:white;
+
+h1.size-50_education {
+    color: white;
 }
 
 
@@ -151,12 +153,14 @@ body {
     -webkit-animation: wink 5s ease-in-out infinite alternate;
     animation: wink 5s ease-in-out infinite alternate
 }
-canvas { 
+
+canvas {
     overflow: hidden;
-    width:100vw;
-    height:100vh;
-    background-color:black;
- }
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
 @media only screen and (min-width:768px) {
     .preloader {
         height: 60px;
@@ -164,11 +168,13 @@ canvas {
         margin-top: -30px;
         margin-left: -30px
     }
+
     .preloader:before {
         left: -2px;
         top: -2px;
         border-width: 2px
     }
+
     .preloader>.icon {
         height: 37.5px;
         width: 15.9px;
@@ -184,6 +190,7 @@ canvas {
         margin-top: -30px;
         margin-left: -30px
     }
+
     .preloader>.icon {
         height: 50px;
         width: 21.2px;
@@ -197,6 +204,7 @@ canvas {
         -webkit-transform: rotate(0);
         transform: rotate(0)
     }
+
     to {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg)
@@ -208,6 +216,7 @@ canvas {
         -webkit-transform: rotate(0);
         transform: rotate(0)
     }
+
     to {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg)
@@ -218,6 +227,7 @@ canvas {
     from {
         opacity: 0
     }
+
     to {
         opacity: 1
     }
@@ -227,6 +237,7 @@ canvas {
     from {
         opacity: 0
     }
+
     to {
         opacity: 1
     }
@@ -293,34 +304,69 @@ a.active {
 /* home section
 ==================================================*/
 
-/* #home {
-    background: url(../img/home-bg-2.gif);
-    background-size: cover;
+#home {
+    /* background: url(../img/home-bg-2.gif);
+    background-size: cover; */
     height: 100vh;
-} */
 
-/* canvas { 
+}
+
+canvas {
     overflow: hidden;
-
-    background-color:black;
- } */
-
- #testbackground {
-    width:100vw;
-    height:100vh;
-  
- }
+    background-color: black;
+}
 
 
-.table-cell {
+.context {
+    width: 100%;
+    position: absolute;
+    top: 50vh;
+
+}
+
+.context h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+
+}
+
+
+#testbackground {
+    /* background: url(../img/home-bg-2.gif);
+    background-size: cover;
+    height: 100vh; */
+    width: 100%;
+    height: 100vh;
+
+
+
+
+
+
+}
+
+
+
+
+/* .container.table-cell {
+
     display: table-cell;
     vertical-align: middle;
+
+
 }
 
 .disply-table {
     display: table;
     height: 100vh;
+
+} */
+.home_titel {
+    position: absolute;
 }
+
+
 
 
 /* about section
@@ -470,62 +516,75 @@ a.active {
     margin-bottom: 1.2em;
     padding: 0.25em 1em 0.2em 1em;
 }
+
 #OurBlog {
-	padding: 60px 0;
-	background-color: white;
+    padding: 60px 0;
+    background-color: white;
 }
+
 #OurBlog h2 {
-	color: #000;
-	font: 68px/125% 'Futura PT book';
-	margin-bottom: 20px;
-	text-align: center;
+    color: #000;
+    font: 68px/125% 'Futura PT book';
+    margin-bottom: 20px;
+    text-align: center;
 }
+
 #OurBlog p {
-	color: #000;
-	font: 18px/125% 'Futura PT book';
-	margin-bottom: 20px;
-	text-align: center;
+    color: #000;
+    font: 18px/125% 'Futura PT book';
+    margin-bottom: 20px;
+    text-align: center;
 }
+
 #OurBlog .blog-wrap {
-	position: relative;
-	height: 500px;
-	margin: 60px 0;
+    position: relative;
+    height: 500px;
+    margin: 60px 0;
 }
+
 #OurBlog .each-block {
     position: absolute;
     width: 420px;
 }
+
 #OurBlog .each-block.one {
     left: 0;
     top: 0;
 }
+
 #OurBlog .each-block.two {
     top: 40%;
     right: 0;
 }
+
 #OurBlog .each-block.three {
     top: 78%;
     left: 0;
 }
+
 #OurBlog .each-block .icon {
-  float: left;
-  background-color: #425BB5;
-  padding: 8px 10px 4px;
-  margin-right: 16px;
+    float: left;
+    background-color: #425BB5;
+    padding: 8px 10px 4px;
+    margin-right: 16px;
 }
+
 #OurBlog .blog-wrap .blog-intro {
     float: left;
     width: 80%;
 }
+
 #OurBlog .blog-wrap .blog-intro h3 {
     font: 700 24px/100% 'Futura PT book';
     margin: 0 0 6px;
 }
+
 #OurBlog .blog-intro p {
     text-align: left;
     padding-left: 45px;
     position: relative;
 }
+
 #OurBlog .blog-intro p:before {
     content: "";
     width: 36px;
@@ -535,6 +594,7 @@ a.active {
     left: 0;
     top: 6px;
 }
+
 #OurBlog .blog-wrap:before {
     content: "";
     width: 2px;
@@ -544,6 +604,7 @@ a.active {
     left: 50%;
     transform: translateX(-50%);
 }
+
 #OurBlog .each-block:before {
     content: "";
     width: 14px;
@@ -555,13 +616,16 @@ a.active {
     top: 50%;
     transform: translateY(-50%);
 }
+
 #OurBlog .each-block.two:before {
     right: auto;
     left: -34%;
 }
+
 #OurBlog .learnmore {
-	text-align: center;
+    text-align: center;
 }
+
 #OurBlog .learnmore a {
     background-color: #425BB5;
     color: #fff;
@@ -571,29 +635,30 @@ a.active {
     border-radius: 5px;
     width: 240px;
 }
+
 #OurBlog .learnmore a span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
 }
 
 #OurBlog .learnmore a span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
 }
 
 #OurBlog .learnmore a:hover span {
-  padding-right: 25px;
+    padding-right: 25px;
 }
 
 #OurBlog .learnmore a:hover span:after {
-  opacity: 1;
-  right: 0;
+    opacity: 1;
+    right: 0;
 }
 
 /* projects section
@@ -617,9 +682,10 @@ a.active {
     background-color: black;
     z-index: 1;
 }
+
 /* site-section */
 .site-section {
-   padding-top: 120px;
+    padding-top: 120px;
 }
 
 .site-section h2,
@@ -637,8 +703,9 @@ a.active {
 .site-section p {
     margin-bottom: 35px;
 }
+
 /* Section: Portfolio */
-#experience{
+#experience {
     background-color: black;
 }
 
@@ -674,8 +741,8 @@ a.active {
     -ms-transition: background-color 0.25s ease-in-out;
 }
 
-.portfolio-item:hover:before{
-    background-color: rgba(33,33,33,0.6);
+.portfolio-item:hover:before {
+    background-color: rgba(33, 33, 33, 0.6);
 }
 
 .portfolio-item-info {
@@ -777,8 +844,8 @@ a.active {
 .section-skills {
     padding-bottom: 120px;
 }
- 
-.skill + .skill {
+
+.skill+.skill {
     margin-top: 50px;
 }
 
@@ -798,8 +865,9 @@ a.active {
 }
 
 .progress-bar {
-    background-color: #212121;  
+    background-color: #212121;
 }
+
 /* Section: Counters */
 .section-counters {
     background: url(../img/counters-bg.jpg) no-repeat fixed center / cover;
@@ -815,7 +883,7 @@ a.active {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .section-counters h4 {
@@ -983,13 +1051,16 @@ fieldset {
         font-size: 50px;
         line-height: 50px;
     }
+
     #home,
     .disply-table {
         height: 600px;
     }
+
     .about-border {
         width: 265px;
     }
+
     .portfolio .categories-grid .categories ul li {
         list-style: none;
         margin: 10px 0;
@@ -1000,6 +1071,7 @@ fieldset {
     nav li {
         margin: 6px;
     }
+
     nav li a {
         font-size: 10px;
     }

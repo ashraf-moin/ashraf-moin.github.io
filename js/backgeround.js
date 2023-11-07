@@ -9,11 +9,14 @@ var w = window.innerWidth,
     size = 7,
     speed = 20,
     parts = new Array,
-    colors = ['red', '#f57900', 'yellow', '#ce5c00', '#5c3566'];
+    colors = ['white', '#425BB5', 'red'];
 var mouse = { x: 0, y: 0 };
 
 canvas.setAttribute('width', w);
 canvas.setAttribute('height', h);
+
+
+
 
 function create() {
     time = 0;
@@ -74,8 +77,8 @@ function MouseMove(e) {
     mouse.x = e.layerX;
     mouse.y = e.layerY;
 
-    //context.fillRect(e.layerX, e.layerY, 5, 5);
-    //Draw( e.layerX, e.layerY );
+    context.fillRect(e.layerX, e.layerY, 5, 5);
+    Draw(e.layerX, e.layerY);
 }
 function DistanceBetween(p1, p2) {
     var dx = p2.x - p1.x;
