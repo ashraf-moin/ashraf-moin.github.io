@@ -561,6 +561,10 @@ canvas {
     top: 78%;
     left: 0;
 }
+#OurBlog .each-block.three {
+    top: 88%;
+    left: 0;
+}
 
 #OurBlog .each-block .icon {
     float: left;
@@ -622,6 +626,8 @@ canvas {
     left: -34%;
 }
 
+
+
 #OurBlog .learnmore {
     text-align: center;
 }
@@ -660,6 +666,18 @@ canvas {
     opacity: 1;
     right: 0;
 }
+
+
+/* publication section
+==================================================*/
+
+#publication {
+    padding: 100px 0;
+    background: black;
+}
+
+
+
 
 /* projects section
 ==================================================*/
