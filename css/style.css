@@ -305,9 +305,9 @@ a.active {
 ==================================================*/
 
 #home {
-    /* background: url(../img/home-bg-2.gif);
-    background-size: cover; */
-    height: 100vh;
+    background: url(../img/home-bg-2.gif);
+    background-size: cover;
+    height: 100%;
 
 }
 
@@ -318,17 +318,29 @@ canvas {
 
 
 .context {
+    text-align: center;
     width: 100%;
     position: absolute;
-    top: 50vh;
+    top: 40vh;
+    color: #fff;
+    margin: auto;
 
 }
 
-.context h1 {
-    text-align: center;
-    color: #fff;
-    font-size: 60px;
 
+
+.context h3 .vision {
+    text-align: center;
+    font-size: 40px;
+    color: #425BB5;
+    /* Color for 'Vision' */
+}
+
+.context h3 .passion {
+    text-align: center;
+    font-size: 40px;
+    color: red;
+    /* Color for 'Passion' */
 }
 
 
@@ -382,7 +394,7 @@ canvas {
 
 .about-border {
     position: absolute;
-    border: 10px solid #212529;
+    border: 10px solid #425BB5;
     width: 400px;
     height: 400px;
     top: 40px;
@@ -518,7 +530,7 @@ canvas {
 }
 
 #OurBlog {
-    padding: 60px 0;
+    margin-bottom: 100px;
     background-color: white;
 }
 
@@ -561,14 +573,15 @@ canvas {
     top: 78%;
     left: 0;
 }
-#OurBlog .each-block.three {
-    top: 88%;
-    left: 0;
+
+#OurBlog .each-block.four {
+    top: 100%;
+    right: 0;
 }
 
 #OurBlog .each-block .icon {
     float: left;
-    background-color: #425BB5;
+    background-color: red;
     padding: 8px 10px 4px;
     margin-right: 16px;
 }
@@ -602,7 +615,7 @@ canvas {
 #OurBlog .blog-wrap:before {
     content: "";
     width: 2px;
-    height: 100%;
+    height: 600px;
     background-color: #e4e4e4;
     position: absolute;
     left: 50%;
@@ -625,10 +638,14 @@ canvas {
     right: auto;
     left: -34%;
 }
-
+#OurBlog .each-block.four:before {
+    right: auto;
+    left: -34%;
+}
 
 
 #OurBlog .learnmore {
+    padding-top: 60px;
     text-align: center;
 }
 
@@ -862,6 +879,12 @@ canvas {
 .section-skills {
     padding-bottom: 120px;
 }
+
+.section-skills h3 {
+    color: #000;
+}
+
+
 
 .skill+.skill {
     margin-top: 50px;
