@@ -60,7 +60,7 @@ h4:before {
     content: "";
     display: block;
     height: 2px;
-    background: #425BB5;
+    background: #D33E43;
     top: 9px;
 }
 
@@ -304,12 +304,7 @@ a.active {
 /* home section
 ==================================================*/
 
-#home {
-    background: url(../img/home-bg-2.gif);
-    background-size: cover;
-    height: 100%;
 
-}
 
 canvas {
     overflow: hidden;
@@ -581,7 +576,7 @@ canvas {
     position: absolute;
     top: 20px;
     left: -30px;
-    background: #007bff;
+    background: #D33E43;
     border-radius: 50%;
     height: 50px;
     width: 50px;
