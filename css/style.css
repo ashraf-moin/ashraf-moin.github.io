@@ -530,160 +530,109 @@ canvas {
 }
 
 #OurBlog {
-    margin-bottom: 100px;
-    background-color: white;
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    position: relative;
 }
-
 #OurBlog h2 {
-    color: #000;
-    font: 68px/125% 'Futura PT book';
-    margin-bottom: 20px;
-    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
 }
-
-#OurBlog p {
-    color: #000;
-    font: 18px/125% 'Futura PT book';
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-#OurBlog .blog-wrap {
+.blog-wrap {
     position: relative;
-    height: 500px;
-    margin: 60px 0;
+    padding: 20px 0;
 }
-
-#OurBlog .each-block {
+.blog-wrap:before {
+    content: '';
     position: absolute;
-    width: 420px;
-}
-
-#OurBlog .each-block.one {
-    left: 0;
     top: 0;
-}
-
-#OurBlog .each-block.two {
-    top: 40%;
-    right: 0;
-}
-
-#OurBlog .each-block.three {
-    top: 78%;
-    left: 0;
-}
-
-#OurBlog .each-block.four {
-    top: 100%;
-    right: 0;
-}
-
-#OurBlog .each-block .icon {
-    float: left;
-    background-color: red;
-    padding: 8px 10px 4px;
-    margin-right: 16px;
-}
-
-#OurBlog .blog-wrap .blog-intro {
-    float: left;
-    width: 80%;
-}
-
-#OurBlog .blog-wrap .blog-intro h3 {
-    font: 700 24px/100% 'Futura PT book';
-    margin: 0 0 6px;
-}
-
-#OurBlog .blog-intro p {
-    text-align: left;
-    padding-left: 45px;
-    position: relative;
-}
-
-#OurBlog .blog-intro p:before {
-    content: "";
-    width: 36px;
-    height: 2px;
-    background-color: #000;
-    position: absolute;
-    left: 0;
-    top: 6px;
-}
-
-#OurBlog .blog-wrap:before {
-    content: "";
-    width: 2px;
-    height: 600px;
-    background-color: #e4e4e4;
-    position: absolute;
+    bottom: 0;
     left: 50%;
+    width: 2px;
+    background: #ddd;
     transform: translateX(-50%);
 }
-
-#OurBlog .each-block:before {
-    content: "";
-    width: 14px;
-    height: 14px;
-    background-color: #425BB5;
+.each-block {
+    position: relative;
+    width: 45%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+}
+.each-block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #000;
+    color: #fff;
+}
+.each-block.left {
+    left: 0;
+    transform: translateX(-55%);
+}
+.each-block.right {
+    left: 55%;
+    transform: translateX(5%);
+}
+.each-block .icon {
     position: absolute;
+    top: 20px;
+    left: -30px;
+    background: #007bff;
     border-radius: 50%;
-    right: -34%;
-    top: 50%;
-    transform: translateY(-50%);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
 }
-
-#OurBlog .each-block.two:before {
-    right: auto;
-    left: -34%;
+.each-block.right .icon {
+    left: auto;
+    right: -30px;
 }
-#OurBlog .each-block.four:before {
-    right: auto;
-    left: -34%;
+.each-block .blog-intro h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
-
-
-#OurBlog .learnmore {
-    padding-top: 60px;
+.each-block .blog-intro p {
+    font-size: 16px;
+    color: inherit;
+}
+.learnmore {
+    margin-top: 40px;
     text-align: center;
 }
-
-#OurBlog .learnmore a {
-    background-color: #425BB5;
-    color: #fff;
-    padding: 20px 30px;
-    font: 700 24px/100% 'Futura PT book';
-    display: inline-block;
+.learnmore a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 2px solid #007bff;
     border-radius: 5px;
-    width: 240px;
+    transition: background-color 0.3s, color 0.3s;
 }
-
-#OurBlog .learnmore a span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
+.learnmore a:hover {
+    background-color: #007bff;
+    color: #fff;
 }
-
-#OurBlog .learnmore a span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-
-#OurBlog .learnmore a:hover span {
-    padding-right: 25px;
+[data-aos="fade-up"] {
+    animation: fadeInUp 0.6s ease-out forwards;
 }
-
-#OurBlog .learnmore a:hover span:after {
-    opacity: 1;
-    right: 0;
-}
-
 
 /* publication section
 ==================================================*/
